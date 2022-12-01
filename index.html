@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style .css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="images/logo (1).ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="outer-container">
+    <!-- header will contain navbar which will have icon and menu -->
+    <header>
+      <nav class="navi">
+        <ol class="ol-container">
+          <li id="logo-container">
+            <img src="images/logo.png" alt="" id="logo" />
+          </li>
+          <li id="web-name">
+            <h1>News Point</h1>
+          </li>
+          <li >
+            <a href="#home-page" id="active"><i class="fa fa-fw fa-home"></i> Home</a>
+          </li>
+          <li >
+            <a href="#news-page"><i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> News Domain Sections</a>
+          </li>
+          <li >
+            <a href="#contact-page"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+          </li>
+          <li >
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fa fa-fw fa-list-ul" aria-hidden="true"></i> Domain List
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#education">Education</a>
+                <a href="#science">Science</a>
+                <a href="#environment">Environment</a>
+                <a href="#astrology">Astrology</a>
+                <a href="#sports">Sports</a>
+                <a href="#tech">Technology</a>
+                <a href="#ent">Entertainment</a>
+                <a href="#lifestyle">Lifestyle</a>
+                <a href="#business">Business</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);" class="icon" onclick="navmenu()">
+            <i class="fa fa-bars"></i>
+          </a></li>
+        </ol>
+      </nav>
+    </header>
+    <!-- main will contain homepage which will have slides of top news and sections at side of latest news at start and sections of news at end  -->
+    <main>
+      <a id="home-page"></a>
+      <div class="home">
+        <span class="home-1">
+          <!-- latest news -->
+          <div class="left-side-container">
+            <!-- <p style="text-align: center; margin-top: 0; margin-bottom: 0">
+              Latest news
+            </p> -->
+            <div class="lsc-item">
+              <img src="images/topstories.jpg" alt="" class="breaking-news-img" />
+              <button class="breaking-news-btton">Top Stories</button>
+            </div>
+            <div class="lsc-item">
+              <img src="images/istockphoto-1182477852-612x612.jpg" alt="" class="breaking-news-img" />
+              <button class="breaking-news-btton">Recent News</button>
+            </div>
+            <div class="lsc-item">
+              <img src="images/most-sharedf.png" alt="" class="breaking-news-img" />
+              <button class="breaking-news-btton">Most Shared</button>
+            </div>
+          </div>
+        </span>
+        <span class="home-2">
+          <!-- top news slideshow -->
+          <div class="slideshow-container">
+            <!-- slides -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/slideshow-img-1.0.jpg" style="width: 100%" />
+              <div class="text" style="color: black; background-color: rgba(253, 253, 253, 0.5);">Welcome to the NEWS
+                POINT!</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/slideshow-img-1.jpeg" style="width: 100%" />
+              <div class="text" style="color: black; background-color: rgba(253, 253, 253, 0.5);">WE PROVIDE YOU WITH
+                NEWS</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/toi-sslideshow-img-1.png" style="width: 100%" />
+              <div class="text" style="color: black; background-color: rgba(253, 253, 253, 0.5);">FROM TIMES OF INDIA!
+              </div>
+            </div>
+            <!-- slide buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <!-- The dots of slides -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </span>
+      </div>
+
+      <h3 id="regional-news-heading">REGION WISE NEWS</h1>
+      <div class="regional-news">
+        <div class="dropdown-region">
+          <button class="dropbtn-region">World
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content-region">
+          <a href=""> US </a>
+          <a href=""> NRI </a>
+          <a href=""> Pakistan </a>
+          <a href=""> South Asia </a>
+          <a href=""> UK </a>
+          <a href=""> Europe </a>
+          <a href=""> China </a>
+          <a href=""> Middle East </a>
+          <a href=""> Rest Of The World </a>
+          </div>
+        </div>
+        <div class="dropdown-region">
+          <button class="dropbtn-region">Cities
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content-region" id="country">
+            <a id="China" href=""> Mumbai </a>	
+            <a href=""> Delhi	</a>	
+            <a href=""> Bangalore </a>
+            <a href=""> Hyderabad </a>
+            <a href=""> Chennai </a>
+            <a href=""> Ahemdabad </a>
+            <a href=""> Allahabad </a>
+            <a href=""> Bhubaneswar </a>
+            <a href=""> Coimbatore </a>
+            <a href=""> Gurgaon </a>
+            <a href=""> Guwahati </a>
+            <a href=""> Hubli </a>
+            <a href=""> Kanpur </a>
+            <a href=""> Kolkata </a>
+            <a href=""> Ludhiana </a>
+            <a href=""> Mangalore </a>
+            <a href=""> Mysore </a>
+            <a href=""> Noida </a>
+            <a href=""> Pune </a>
+            <a href=""> Goa </a>
+            <a href=""> Chandigarh </a>
+            <a href=""> Lucknow </a>
+            <a href=""> Patna </a>
+            <a href=""> Jaipur </a>
+            <a href=""> Nagpur </a>
+            <a href=""> Rajkot </a>
+            <a href=""> Ranchi </a>
+            <a href=""> Surat </a>
+            <a href=""> Vadodara </a>
+            <a href=""> Varanasi </a>
+            <a href=""> Thane </a>
+            <a href=""> Thiruvananthapuram </a>
+          </div>
+        </div>
+      </div>
+
+      <a id="news-page"></a>
+      <h3>NEWS SECTIONS</h3>
+      <div class="section-container">
+        <div class="section-item sitem1" id="education">
+          <img src="images/educ.jpg" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+        <div class="section-item sitem2" id="science">
+          <img src="images/scinews.webp" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+        <div class="section-item sitem3" id="environment">
+          <img src="images/envnews.webp" alt="" />
+          <a href="www.google.com" class="section-button">CLICK HERE</a>
+        </div>
+        <div class="section-item sitem4" id="astrology">
+          <img src="images/astrologunews.jpg" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+        <div class="section-item sitem5" id="sports">
+          <img src="images/sportsnews.webp" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+        <div class="section-item sitem6" id="tech">
+          <img src="images/technews.jpg" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+        <div class="section-item sitem7" id="ent">
+          <img src="images/entnews.jpg" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+        <div class="section-item sitem8" id="lifestyle">
+          <img src="images/lifestyle.png" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+        <div class="section-item sitem9" id="business">
+          <img src="images/businessnews.jpg" alt="" />
+          <a href="www.google.com" class="section-button"> CLICK HERE </a>
+        </div>
+      </div>
+
+      <!-- footer will contain contact us part which will have link to email, twitter, instagram, etc -->
+      <a id="contact-page"></a>
+      <footer>
+        <div class="contact-me">
+          <h1>Get In Touch</h2>
+          <button class="btn" onclick="sendmail()">CONTACT US</button>
+        </div>
+        <div class="bottom-container">
+          <div class="link-container">
+            <a class="footer-link" href="https://www.linkedin.com/in/swarada-bhosale/"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+            <a class="footer-link" href="https://twitter.com/SwaradaBhosale"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+            <a class="footer-link" href="https://timesofindia.indiatimes.com/?from=mdr"><i class="fa fa-fw fa-globe" aria-hidden="true"></i> Original Website</a>
+          </div>
+          <p>© 2022 Swarada Bhosale.</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>
